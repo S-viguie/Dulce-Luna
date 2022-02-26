@@ -7,7 +7,23 @@
     padding: 0;
 }
 
-header{
+.navbar{
+    background-color: #efe6fb;
+    border-bottom: 5px double #9D4EDD;
+}
+
+.navbar-brand{
+    font-family: 'Dancing Script', cursive;
+}
+
+.nav-link{
+    font-family: 'Jost', sans-serif;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/* header{
     grid-area: head;
     background-color: #efe6fb;
     height: 80px;
@@ -57,7 +73,7 @@ nav ul li a{
     text-decoration: none;
     color: black;
     padding: 5px;
-}
+} */
 
 .titulo{
     grid-area: title;
@@ -170,7 +186,7 @@ footer div div{
     row-gap: 50px;
     justify-items: center;
 }
-
+/* 
 .botonMenu{
     display: none;
     position: absolute;
@@ -211,7 +227,7 @@ footer div div{
 .botonMenu li:target ul{
     max-height: 300px;
     transition: .3s all ease-in;
-}
+} */
 
 /* Index */
 .index__box{
@@ -303,7 +319,7 @@ footer div div{
     background: radial-gradient(circle, rgb(240, 234, 234) 0%, rgba(208,209,255,1) 80%);
 }
 
-/* Media 768-1279px */
+/* Media 768-1279px
 @media only screen and (min-width: 768px) and (max-width: 1279px){
     footer{
         flex-direction: column;
@@ -352,7 +368,7 @@ footer div div{
 }
 
 /* Media <767px */
-@media only screen and (max-width: 767px){
+/* @media only screen and (max-width: 767px){
     .botonMenu{
         display: inline;
     }
@@ -499,9 +515,9 @@ footer div div{
         width: 280px;
         height: 400px;
     }
-}
+} */ 
 /* Animaciones */
-    nav ul li a:hover{
+    .navbar-nav a:hover{
         background-color: #9D4EDD;
         color: white;
         transition: all 0.5s;
