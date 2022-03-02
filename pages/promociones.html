@@ -5,102 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dulce luna nails</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../images/una.png">
 </head>
 <body>
     <!-- logo + nav -->
-    <ul class="botonMenu">
-        <li id="menu"><a href="#menu">Menu</a>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="precios.html">Precios</a></li>
-                <li><a href="promociones.html">Promociones</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="turno.html">Turnos</a></li>
-            </ul>
-        </li>
-    </ul>
     <header>
-        <div>
-            <div><a href="index.html"><img src="../images/logo.png" alt="logo"></a></div>
-            <a href="index.html" class="header__texto">Dulce Luna Nails</a>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="precios.html">Precios</a>
-                </li>
-                <li>
-                    <a href="promociones.html">Promociones</a>
-                </li>
-                <li>
-                    <a href="galeria.html">Galeria de fotos</a>
-                </li>
-                <li>
-                    <a href="turno.html">Turnos online</a>
-                </li>
-            </ul>
+        <nav class="navbar sticky-top navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" alt="logo" class="w-100"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link fw-bolder fs-5 link-dark" href="../index.html">Inicio</a>
+                        <a class="nav-link fw-bolder fs-5 link-dark" href="servicios.html">Servicios</a>
+                        <a class="nav-link fw-bolder fs-5 link-dark" href="precios.html">Precios</a>
+                        <a class="nav-link fw-bolder fs-5 link-dark" href="promociones.html">Promociones</a>
+                        <a class="nav-link fw-bolder fs-5 link-dark" href="galeria.html">Galería</a>
+                        <a class="nav-link fw-bolder fs-5 link-dark" href="turno.html">Turnos</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- detalle de las promociones -->
     <h1 class="titulo">Promociones</h1>
-    <main class="main--column">
-        <article class="promociones__box">
-            <h2 class="subtitulo--big">Uñas manos y pies</h2>
-            <h2 class="subtitulo--big">$1300</h2>
-            <p class="texto">Realizando el servicio de esmalte semipermanente en manos y pies, en la misma sesión, te lo dejamos a este precio de oferta</p>
-        </article>
-        <article class="promociones__box">
-            <h2 class="subtitulo--big">Martes de descuento</h2>
-            <h2 class="subtitulo--big">20%</h2>
-            <p class="texto">Todos los martes 20% de descuento sobre el total de los servicios</p>
-        </article>
-        <article class="promociones__box">
-            <h2 class="subtitulo--big">Gift card</h2>
-            <img src="../images/regalo.png" alt="regalo" class="promociones__regalo">
-            <p class="texto">¿Tenés que hacer un regalo y no sabes qué? ¡Comprá una giftcard y obsequiale a esa persona un servicio nuestro!</p>
-        </article>
+    <main class="container position-relative main__promociones">
+        <div id="carouselExampleCaptions" class="carousel slide position-absolute top-0 start-50 translate-middle-x" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="promociones__box">
+                        <h2 class="subtitulo--big">Uñas manos y pies</h2>
+                        <h2 class="subtitulo--big">$1300</h2>
+                        <p class="texto--promociones">Realizando el servicio de esmalte semipermanente en manos y pies en la misma sesión</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="promociones__box">
+                        <h2 class="subtitulo--big">Martes de descuento</h2>
+                        <h2 class="subtitulo--big">20%</h2>
+                        <p class="texto--promociones">Todos los martes 20% de descuento sobre el total de los servicios</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="promociones__box">
+                        <h2 class="subtitulo--big">Gift card</h2>
+                        <img src="../images/regalo.png" alt="regalo" class="promociones__regalo">
+                        <p class="texto--promociones">¿Tenés que hacer un regalo y no sabes qué? <br> ¡Comprá una giftcard y obsequiale a esa persona un servicio nuestro!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>  
     </main>
     <div class="wspLink">
         <a href="https://wa.me/541165190922"><img src="../images/whatsapplink.png" alt="whatsapp"></a>
     </div>
     <!-- footer -->
-    <footer>
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1380.260092070836!2d-58.51816340173628!3d-34.633729908985764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc837abe3c875%3A0x99e0668a136fd594!2sAv.%20Juan%20B.%20Justo%209100%2C%20C1408%20CABA!5e0!3m2!1ses-419!2sar!4v1643148098692!5m2!1ses-419!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <div>
-                <img src="../images/localizacion.png" alt="localizacion">
-                <p>Av. Juan B. Justo 9100, Liniers</p>
+    <footer class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-4 col-xs-12 d-flex flex-column justify-content-center align-items-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1380.260092070836!2d-58.51816340173628!3d-34.633729908985764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc837abe3c875%3A0x99e0668a136fd594!2sAv.%20Juan%20B.%20Justo%209100%2C%20C1408%20CABA!5e0!3m2!1ses-419!2sar!4v1643148098692!5m2!1ses-419!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <img src="../images/localizacion.png" alt="localizacion">
+                    <p>Av. Juan B. Justo 9100, Liniers</p>
+                </div>
             </div>
-        </div>
-        <div>
-            <div>
-                <img src="../images/contacto.png" alt="contacto">
-                <p>¿Dudas? ¡Contactanos!</p>
+            <div class="col-lg-4 col-xs-12 d-flex flex-column justify-content-center align-items-center">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <img src="../images/contacto.png" alt="contacto">
+                    <p>¿Dudas? ¡Contactanos!</p>
+                </div>
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <img src="../images/whatsapp.png" alt="whatsapp">
+                    <p>1165190922</p>
+                </div>
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <img src="../images/email.png" alt="email">
+                    <p>dulceluna@gmail.com</p>
+                </div>
             </div>
-            <div>
-                <img src="../images/whatsapp.png" alt="whatsapp">
-                <p>1165190922</p>
-            </div>
-            <div>
-                <img src="../images/email.png" alt="email">
-                <p>dulceluna@gmail.com</p>
-            </div>
-        </div>
-        <div>
-            <div class="footer__instagram">
-                <p>¡Seguinos en instagram!</p>
-                <a href="https://www.instagram.com/dulceluna_nails/?hl=es"><img src="../images/instagram.png" alt="instagram"></a>
+            <div class="col-lg-4 col-xs-12 d-flex flex-column justify-content-center align-items-center">
+                <div class="footer__instagram d-flex flex-column justify-content-center align-items-center">
+                    <p>¡Seguinos en instagram!</p>
+                    <a href="https://www.instagram.com/dulceluna_nails/?hl=es"><img src="../images/instagram.png" alt="instagram"></a>
+                </div>
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
