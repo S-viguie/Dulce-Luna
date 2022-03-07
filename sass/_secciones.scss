@@ -1,0 +1,104 @@
+/* Index */
+
+.index__box{
+    height: 550px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px;
+    margin-top: 0;
+    .index__imagen{
+        border: 2px solid black;
+        border-radius: 100px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Servicios */
+
+.accordion{
+    width: 950px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    .accordion-button{
+        font-family: 'Jost', sans-serif;
+        font-size: 1em;
+    }
+    .servicios__box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 900px;
+        padding: 30px;
+        .servicios__texto{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+        }
+    }
+}
+
+/* Precios */
+
+.card{
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    .precios__texto{
+        font-family: 'Jost', sans-serif;
+        font-size: 2.3em;
+        text-align: center;
+        line-height: 1;
+    }
+}
+
+/* Promociones */
+.main__promociones{
+    height: 350px;
+    .carousel{
+        border-radius: 50px;
+        box-shadow: 0 5px 10px rgba(0,0,0,.2);
+        .promociones__box{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 300px;
+            width: 600px;
+            background: rgb(192,253,255);
+            background: radial-gradient(circle, rgb(240, 234, 234) 0%, rgba(208,209,255,1) 80%);
+            border-radius: 50px;
+            .texto--promociones{
+                font-family: 'Jost', sans-serif;
+                font-size: 1.2em;
+                width: 300px;
+                text-align: center;
+                }
+            }
+        }
+    }
+
+/* Galeria */
+
+.row__gap{
+    margin-bottom: 30px;
+}
+
+/* Turno online */
+
+.formulario__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 400px;
+    height: 550px;
+    background: rgb(192,253,255);
+    background: radial-gradient(circle, rgb(240, 234, 234) 0%, rgba(208,209,255,1) 80%);
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}

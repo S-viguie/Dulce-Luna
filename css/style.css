@@ -1,433 +1,300 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
 
-/* Globales */
-*{
-    margin: 0;
-    padding: 0;
-}
+body {
+  background-color: whitesmoke; }
 
-.navbar{
-    background-color: #efe6fb;
-    border-bottom: 5px double #9D4EDD;
-}
+.fondo {
+  background: #c0fdff;
+  background: radial-gradient(circle, #f0eaea 0%, #d0d1ff 80%); }
 
-.navbar-brand{
-    font-family: 'Dancing Script', cursive;
-}
+.fondo--claro {
+  background-color: #efe6fb; }
 
-.nav-link{
-    font-family: 'Jost', sans-serif;
-}
+.titulo {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 5em;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 60px; }
 
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
+.subtitulo {
+  font-family: 'Jost', sans-serif;
+  font-size: 1.8em;
+  padding-bottom: 30px; }
 
-.accordion-button{
-    font-family: 'Jost', sans-serif;
-    font-size: 1em;
-}
+.texto {
+  font-family: 'Jost', sans-serif;
+  font-size: 1.2em; }
 
-.fondo{
-    background: rgb(192,253,255);
-    background: radial-gradient(circle, rgb(240, 234, 234) 0%, rgba(208,209,255,1) 80%);
-}
+.subtitulo--center {
+  font-family: 'Jost', sans-serif;
+  font-size: 1.8em;
+  text-align: center; }
 
-.fondo--claro{
-    background-color: #efe6fb;
-}
+.subtitulo--big {
+  font-family: 'Jost', sans-serif;
+  font-size: 2em; }
 
-.titulo{
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
-    font-size: 5em;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 60px;
-}
+.wspLink {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-color: #ebe9e9;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 10%;
+  text-align: center;
+  padding-top: 3px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999; }
 
-.subtitulo{
-    font-family: 'Jost', sans-serif;
-    font-size: 1.8em;
-    padding-bottom: 30px;
-}
-
-.texto{
-    font-family: 'Jost', sans-serif;
-    font-size: 1.2em;
-}
-
-.texto--promociones{
-    font-family: 'Jost', sans-serif;
-    font-size: 1.2em;
-    width: 300px;
-    text-align: center;
-}
-
-body{
-    background-color: whitesmoke;
-}
-
-.subtitulo--center{
-    font-family: 'Jost', sans-serif;
-    font-size: 1.8em;
-    text-align: center;
-}
-
-.subtitulo--big{
-    font-family: 'Jost', sans-serif;
-    font-size: 2em;
-}
-
-.wspLink{
-    display:block;
-    width:70px;
-    height:70px;
-    background-color: rgb(235, 233, 233);
-    position: fixed;
-    right:20px;
-    bottom:20px;
-    border-radius:10%;
-    text-align:center;
-    padding-top: 3px;
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
-    z-index:999;
-}
-
-footer{
-    background-color: #efe6fb;
-    margin-bottom: 0;
-    margin-top: 30px;
-    height: 300px;
-    border-top: 5px double #9D4EDD;
-    font-family: 'Jost', sans-serif;
-    font-weight: bold;
-    font-size: 1.2em;
-}
+.navbar {
+  background-color: #efe6fb;
+  border-bottom: 5px double #9D4EDD; }
+  .navbar .navbar-brand {
+    font-family: 'Dancing Script', cursive; }
+  .navbar .nav-link {
+    font-family: 'Jost', sans-serif; }
+  .navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
 
 /* Index */
-
-.index__box{
-    height: 550px;
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 20px;
-    margin-top: 0;
-}
-
-.index__imagen{
+.index__box {
+  height: 550px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px;
+  margin-top: 0; }
+  .index__box .index__imagen {
     border: 2px solid black;
     border-radius: 100px;
-    margin-bottom: 30px;
-}
+    margin-bottom: 30px; }
 
 /* Servicios */
-
-.servicios__box{
+.accordion {
+  width: 950px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+  .accordion .accordion-button {
+    font-family: 'Jost', sans-serif;
+    font-size: 1em; }
+  .accordion .servicios__box {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 900px;
-    padding: 30px;
-}
-
-.servicios__texto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-}
-
-.accordion{
-    width: 950px;
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
-}
+    padding: 30px; }
+    .accordion .servicios__box .servicios__texto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px; }
 
 /* Precios */
-
-.card{
-    width: 300px;
-    height: 300px;
-    margin: 30px;
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
-}
-
-.precios__texto{
+.card {
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+  .card .precios__texto {
     font-family: 'Jost', sans-serif;
     font-size: 2.3em;
     text-align: center;
-    line-height: 1;
-}
+    line-height: 1; }
 
 /* Promociones */
-
-.main__promociones{
-    height: 350px;
-}
-
-.promociones__box{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 300px;
-    width: 600px;
-    background: rgb(192,253,255);
-    background: radial-gradient(circle, rgb(240, 234, 234) 0%, rgba(208,209,255,1) 80%);
+.main__promociones {
+  height: 350px; }
+  .main__promociones .carousel {
     border-radius: 50px;
-}
-
-.carousel{
-    border-radius: 50px;
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
-}
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+    .main__promociones .carousel .promociones__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 300px;
+      width: 600px;
+      background: #c0fdff;
+      background: radial-gradient(circle, #f0eaea 0%, #d0d1ff 80%);
+      border-radius: 50px; }
+      .main__promociones .carousel .promociones__box .texto--promociones {
+        font-family: 'Jost', sans-serif;
+        font-size: 1.2em;
+        width: 300px;
+        text-align: center; }
 
 /* Galeria */
-
-.row__gap{
-    margin-bottom: 30px;
-}
+.row__gap {
+  margin-bottom: 30px; }
 
 /* Turno online */
+.formulario__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 400px;
+  height: 550px;
+  background: #c0fdff;
+  background: radial-gradient(circle, #f0eaea 0%, #d0d1ff 80%);
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
 
-.formulario__box{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 400px;
-    height: 550px;
-    background: rgb(192,253,255);
-    background: radial-gradient(circle, rgb(240, 234, 234) 0%, rgba(208,209,255,1) 80%);
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
-}
+footer {
+  background-color: #efe6fb;
+  margin-bottom: 0;
+  margin-top: 30px;
+  height: 300px;
+  border-top: 5px double #9D4EDD;
+  font-family: 'Jost', sans-serif;
+  font-weight: bold;
+  font-size: 1.2em; }
 
 /* Media 768-1023px */
-@media only screen and (min-width: 768px) and (max-width: 1023px){
-    footer{
-        height: auto;
-    } 
-
-    footer div{
-        margin: 10px;
-    }
-
-    .servicios__box{
-        flex-direction: column;
-        width: fit-content;
-        align-items: center;
-    }
-
-    .servicios__texto{
-        margin-top: 20px;
-    }
-}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  footer {
+    height: auto; }
+  footer div {
+    margin: 10px; }
+  .servicios__box {
+    flex-direction: column;
+    width: fit-content;
+    align-items: center; }
+  .servicios__texto {
+    margin-top: 20px; } }
 
 /* Media <767px */
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
+  footer {
+    height: auto; }
+  footer div {
+    margin: 10px; }
+  .wspLink {
+    width: 35px;
+    height: 35px;
+    right: 5px;
+    bottom: 5px; }
+  .wspLink a img {
+    max-width: 100%;
+    max-height: 100%; }
+  .titulo {
+    font-size: 2.5em;
+    margin-bottom: 30px; }
+  .subtitulo {
+    font-size: 1.2em;
+    padding-bottom: 15px; }
+  .subtitulo--big {
+    font-size: 1.2em; }
+  .texto {
+    font-size: 0.8em; }
+  .servicios__box {
+    flex-direction: column;
+    width: 250px;
+    align-items: center; }
+  .servicios__texto {
+    margin-top: 20px; }
+  .subtitulo--center {
+    font-size: 1.2em; }
+  .index__box {
+    height: 380px;
+    width: 280px;
+    margin: 0; }
+  .index__imagen {
+    max-width: 100%;
+    margin-bottom: 10px; }
+  .servicios__box {
+    flex-direction: column;
+    width: 240px;
+    align-items: center;
+    padding: 20px; }
+  .servicios__box img {
+    max-width: 100%;
+    height: 180px; }
+  .servicios__texto {
+    width: fit-content; }
+  .precios__box {
+    height: 175px;
+    width: 280px;
+    margin: 10px;
+    margin-top: 0px; }
+  .precios__texto {
+    font-size: 1.5em; }
+  .main__promociones {
+    height: 250px; }
+  .promociones__box {
+    height: 220px;
+    width: 280px; }
+  .texto--promociones {
+    font-size: 0.8em;
+    width: 200px; }
+  .formulario__box {
+    width: 280px;
+    height: 400px; } }
 
-    footer{
-        height: auto;
-    }
+.navbar-nav a:hover {
+  background-color: #9D4EDD;
+  color: white;
+  transition: all 0.5s; }
 
-    footer div{
-        margin: 10px;
-    } 
+.card:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 1s; }
 
-    .wspLink{
-        width:35px;
-        height:35px;
-        right:5px;
-        bottom:5px;
-    }
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1.2, 1.2, 1.2); }
+  to {
+    transform: scale3d(1, 1, 1); } }
 
-    .wspLink a img{
-        max-width: 100%;
-        max-height: 100%;
-    }
+.wspLink:hover {
+  animation: pulse 1s; }
 
-    .titulo{
-        font-size: 2.5em;
-        margin-bottom: 30px;
-    }
+@keyframes heartBeat {
+  0% {
+    transform: scale(1); }
+  14% {
+    transform: scale(1.3); }
+  28% {
+    transform: scale(1); }
+  42% {
+    transform: scale(1.3); }
+  70% {
+    transform: scale(1); } }
 
-    .subtitulo{
-        font-size: 1.2em;
-        padding-bottom: 15px;
-    }
+.footer__instagram:hover {
+  animation: heartBeat 2s; }
 
-    .subtitulo--big{
-        font-size: 1.2em;
-    }
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
 
-    .texto{
-        font-size: 0.8em;
-    }
+.titulo {
+  animation: fadeInDown 1s; }
 
-    .servicios__box{
-        flex-direction: column;
-        width: 250px;
-        align-items: center;
-    }
+.subtitulo--center {
+  animation: fadeInDown 1s; }
 
-    .servicios__texto{
-        margin-top: 20px;
-    }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
-    .subtitulo--center{
-        font-size: 1.2em;
-    }
-
-    .index__box{
-        height: 380px;
-        width: 280px;
-        margin: 0;
-    }
-
-    .index__imagen{
-        max-width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .servicios__box{
-        flex-direction: column;
-        width: 240px;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .servicios__box img{
-        max-width: 100%;
-        height: 180px;
-    }
-
-    .servicios__texto{
-        width: fit-content;
-    }
-
-    .precios__box{
-        height: 175px;
-        width: 280px;
-        margin: 10px;
-        margin-top: 0px;
-    }
-
-    .precios__texto{
-        font-size: 1.5em;
-    }
-
-    .main__promociones{
-        height: 250px;
-    }
-
-    .promociones__box{
-        height: 220px;
-        width: 280px;
-    }
-
-    .texto--promociones{
-        font-size: 0.8em;
-        width: 200px;
-    }
-
-    .formulario__box{
-        width: 280px;
-        height: 400px;
-    }
-} 
-
-/* Animaciones */
-    .navbar-nav a:hover{
-        background-color: #9D4EDD;
-        color: white;
-        transition: all 0.5s;
-    }
-
-    .card:hover{
-        transform: scale(1.2, 1.2);
-        transition: all 1s;
-    }
-
-    @keyframes pulse{
-        from {
-        transform: scale3d(1, 1, 1);
-        }
-    
-        50% {
-        transform: scale3d(1.2, 1.2, 1.2);
-        }
-    
-        to {
-        transform: scale3d(1, 1, 1);
-        }
-    }
-
-    .wspLink:hover{
-        animation: pulse 1s;
-    }
-
-    @keyframes heartBeat{
-        0% {
-        transform: scale(1);
-        }
-    
-        14% {
-        transform: scale(1.3);
-        }
-    
-        28% {
-        transform: scale(1);
-        }
-    
-        42% {
-        transform: scale(1.3);
-        }
-    
-        70% {
-        transform: scale(1);
-        }
-    }
-    
-    .footer__instagram:hover{
-        animation: heartBeat 2s;
-    }
-
-    @keyframes fadeInDown{
-        from {
-        opacity: 0;
-        transform: translate3d(0, -100%, 0);
-        }
-    
-        to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-        }
-    }
-
-    .titulo{
-        animation: fadeInDown 1s;
-    }
-
-    .subtitulo--center{
-        animation: fadeInDown 1s;
-    }
-
-    @keyframes fadeIn{
-        from {
-        opacity: 0;
-        }
-    
-        to {
-        opacity: 1;
-        }
-    }
-
-    main{
-        animation: fadeIn 2s;
-    }
+main {
+  animation: fadeIn 2s; }
