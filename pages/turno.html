@@ -32,40 +32,42 @@
         </nav>
     </header>
     <!-- formulario -->
-    <h1 class="titulo">Pedí tu turno online!</h1>
-    <main class="container d-flex justify-content-center">
-        <fieldset>
-            <form class="formulario__box texto">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre">
-                <label for="tel">Teléfono:</label>
-                <input type="tel" name="tel">
-                <label for="servicio">Servicio:</label>
-                <select name="servicio" class="form-select" aria-label="Default select example">
-                    <option value="esc">Esculpidas</option>
-                    <option value="esm">Esmalte</option>
-                    <option value="cap">Capping</option>
-                </select>
-                <div class="form-check">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    A domicilio
-                    </label>
-                    <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault">
-                </div>
-                <input type="date"/>
-                <select name="horario">
-                    <option value="9">09:00</option>
-                    <option value="11">11:00</option>
-                    <option value="16">16:00</option>
-                    <option value="18">18:00</option>
-                </select>
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2">Comentarios</label>
-                </div>
-                <input type="submit" value="Enviar">
-            </form>
-        </fieldset>
+    <main>
+        <h1 class="titulo">Pedí tu turno online!</h1>
+        <section class="container d-flex justify-content-center">
+            <fieldset>
+                <form class="formulario__box texto">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre">
+                    <label for="tel">Teléfono:</label>
+                    <input type="tel" name="tel">
+                    <label for="servicio">Servicio:</label>
+                    <select name="servicio" class="form-select" aria-label="Default select example">
+                        <option value="esc">Esculpidas</option>
+                        <option value="esm">Esmalte</option>
+                        <option value="cap">Capping</option>
+                    </select>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckDefault">
+                        A domicilio
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault">
+                    </div>
+                    <input type="date"/>
+                    <select name="horario">
+                        <option value="9">09:00</option>
+                        <option value="11">11:00</option>
+                        <option value="16">16:00</option>
+                        <option value="18">18:00</option>
+                    </select>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Comentarios</label>
+                    </div>
+                    <input type="submit" value="Enviar">
+                </form>
+            </fieldset>
+        </section>
     </main>
     <div class="wspLink">
         <a href="https://wa.me/541165190922"><img src="../images/whatsapplink.png" alt="whatsapp"></a>
