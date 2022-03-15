@@ -69,8 +69,7 @@
             align-items: center;
             height: 300px;
             width: 600px;
-            background: rgb(192,253,255);
-            background: radial-gradient(circle, rgb(240, 234, 234) 0%, rgba(208,209,255,1) 80%);
+            @include fondoRadial;
             border-radius: 50px;
             .texto--promociones{
                 font-family: 'Jost', sans-serif;
@@ -96,8 +95,7 @@
     justify-content: space-around;
     width: 400px;
     height: 550px;
-    background: rgb(192,253,255);
-    background: radial-gradient(circle, rgb(240, 234, 234) 0%, rgba(208,209,255,1) 80%);
+    @include fondoRadial;
     padding: 20px;
     border-radius: 30px;
     box-shadow: 0 5px 10px rgba(0,0,0,.2);

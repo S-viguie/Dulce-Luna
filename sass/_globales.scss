@@ -7,9 +7,13 @@ body{
     background-color: whitesmoke;
 }
 
-.fondo{
+@mixin fondoRadial {
     background: rgb(192,253,255);
     background: radial-gradient(circle, rgb(240, 234, 234) 0%, rgba(208,209,255,1) 80%);
+}
+
+.fondo{
+    @include fondoRadial;
 }
 
 .fondo--claro{
@@ -19,7 +23,6 @@ body{
 .titulo{
     text-align: center;
     font-family: 'Dancing Script', cursive;
-    font-size: 5em;
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 60px;
@@ -27,23 +30,22 @@ body{
 
 .subtitulo{
     font-family: 'Jost', sans-serif;
-    font-size: 1.8em;
     padding-bottom: 30px;
 }
 
 .texto{
     font-family: 'Jost', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.2em
 }
 
 .subtitulo--center{
-    font-family: 'Jost', sans-serif;
+    @extend .texto;
     font-size: 1.8em;
     text-align: center;
 }
 
 .subtitulo--big{
-    font-family: 'Jost', sans-serif;
+    @extend .texto;
     font-size: 2em;
 }
 
@@ -60,4 +62,15 @@ body{
     padding-top: 3px;
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     z-index:999;
+}
+
+$fontSize:(
+    titulo: 5em,
+    subtitulo: 1.8em,
+);
+
+@each $name-size, $font-size in $fontSize {
+    .#{$name-size}{
+        font-size: $font-size;
+    }
 }

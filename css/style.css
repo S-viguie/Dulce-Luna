@@ -17,27 +17,23 @@ body {
 .titulo {
   text-align: center;
   font-family: 'Dancing Script', cursive;
-  font-size: 5em;
   font-weight: bold;
   margin-top: 30px;
   margin-bottom: 60px; }
 
 .subtitulo {
   font-family: 'Jost', sans-serif;
-  font-size: 1.8em;
   padding-bottom: 30px; }
 
-.texto {
+.texto, .subtitulo--center, .subtitulo--big {
   font-family: 'Jost', sans-serif;
   font-size: 1.2em; }
 
 .subtitulo--center {
-  font-family: 'Jost', sans-serif;
   font-size: 1.8em;
   text-align: center; }
 
 .subtitulo--big {
-  font-family: 'Jost', sans-serif;
   font-size: 2em; }
 
 .wspLink {
@@ -53,6 +49,12 @@ body {
   padding-top: 3px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   z-index: 999; }
+
+.titulo {
+  font-size: 5em; }
+
+.subtitulo {
+  font-size: 1.8em; }
 
 .navbar {
   background-color: #efe6fb;
@@ -195,7 +197,7 @@ footer {
     padding-bottom: 15px; }
   .subtitulo--big {
     font-size: 1.2em; }
-  .texto {
+  .texto, .subtitulo--center, .subtitulo--big {
     font-size: 0.8em; }
   .servicios__box {
     flex-direction: column;
