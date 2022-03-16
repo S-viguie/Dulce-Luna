@@ -4,7 +4,10 @@
 }
 
 body{
-    background-color: whitesmoke;
+    background-image: url(../images/fondo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 100% 100px;
 }
 
 @mixin fondoRadial {
