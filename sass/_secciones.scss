@@ -1,21 +1,48 @@
 /* Index */
 
-.index__box{
-    height: 550px;
-    width: 350px;
+.index__box--left{
+    height: 300px;
+    width: 780px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 50px;
+    background-color: rgba(244, 122, 255, 0.089);
+    margin: 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    margin: 20px;
-    margin-top: 0;
-    .index__imagen{
-        border: 2px solid black;
+    animation: slideInRight 2s;
+    p{
+        margin: 5px;
+    }
+    .index__imagen--left{
         border-radius: 100px;
-        margin-bottom: 30px;
+        box-shadow: 0 5px 10px rgba(0,0,0,.2);
+        position: relative;
+        right: 75px;
     }
 }
 
+.index__box--right{
+    height: 300px;
+    width: 780px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 50px;
+    background-color: rgba(244, 122, 255, 0.089);
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    animation: slideInLeft 2s;
+    .index__imagen--right{
+        border-radius: 100px;
+        box-shadow: 0 5px 10px rgba(0,0,0,.2);
+        position: relative;
+        left: 75px;
+    }
+    p{
+        margin: 5px;
+    }
+}
 /* Servicios */
 
 .accordion{
@@ -83,8 +110,147 @@
 
 /* Galeria */
 
-.row__gap{
-    margin-bottom: 30px;
+@mixin imghover {
+    z-index: 999;
+    transition: transform 1s;
+    border: solid 2px white;
+    transition-delay: 100ms;
+}
+
+.box__galeria{
+    width: 1020px;
+    height: 862px;
+    display: flex;
+    flex-wrap: wrap;
+    img{
+        margin: 2px;
+    }
+    .imagen__0{
+        &:hover{
+            transform: scale(1.3) translate(20%, 15%);
+            @include imghover
+        }
+    }
+    .imagen__1{
+        &:hover{
+            transform: scale(1.5) translate(10%, 25%);
+            @include imghover
+        }
+    }
+    .imagen__2{
+        &:hover{
+            transform: scale(1.3) translate(-20%, 25%);
+            @include imghover
+        }
+    }
+    .imagen__3{
+        position: relative;
+        bottom: 200px;
+        left: 204px;
+        &:hover{
+            transform: scale(1.2);
+            @include imghover
+        }
+    }
+
+    .imagen__4{
+        position: relative;
+        border-radius: 100%;
+        border: solid 4px white;
+        right: 500px;
+        bottom: 60px;
+        z-index: 995;
+        &:hover{
+            transform: scale(1.5) translate(20%, 10%);
+            @include imghover
+        }
+    }
+
+    .imagen__5{
+        position: relative;
+        right: 816px;
+        &:hover{
+            transform: scale(1.5) translate(20%, 10%);
+            @include imghover
+        }
+    }
+
+    .imagen__6{
+        position: relative;
+        bottom: 50px;
+        &:hover{
+            transform: scale(1.5) translate(20%, -20%);
+            @include imghover
+        }
+    }
+
+    .imagen__7{
+        position: relative;
+        bottom: 200px;
+        &:hover{
+            transform: scale(1.3) translate(15%, -15%);
+            @include imghover
+        }
+    }
+
+    .imagen__8{
+        position: relative;
+        bottom: 200px;
+        &:hover{
+            transform: scale(1.5) translate(10%, -10%);
+            @include imghover
+        }
+    }
+
+    .imagen__9{
+        position: relative;
+        bottom: 16px;
+        right: 304px;
+        &:hover{
+            transform: scale(1.5) translate(10%, -20%);
+            @include imghover
+        }
+    }
+
+    .imagen__10{
+        position: relative;
+        bottom: 858px;
+        left: 818px;
+        &:hover{
+            transform: scale(1.5) translate(-20%, 10%);
+            @include imghover
+        }
+    }
+
+    .imagen__11{
+        position: relative;
+        bottom: 554px;
+        left: 520px;
+        &:hover{
+            transform: scale(1.2) translate(-15%, -15%);
+            @include imghover
+        }
+    }
+
+    .imagen__12{
+        @extend .imagen__4;
+        bottom: 930px;
+        left: 180px;
+        &:hover{
+            transform: scale(1.5) translate(-20%, 20%);
+            @include imghover
+        }
+    }
+
+    .imagen__13{
+        @extend .imagen__4;
+        bottom: 500px;
+        right: 70px;
+        &:hover{
+            transform: scale(1.5) translate(-20%, -10%);
+            @include imghover
+        }
+    }
 }
 
 /* Turno online */
