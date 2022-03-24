@@ -1,5 +1,36 @@
+/* Media 1024-1080 */
+@media only screen and (min-width: 1024px) and (max-width: 1080px){
+    .index__box--left{
+        .index__imagen--left{
+            position: relative;
+            right: 30px;
+        }
+    }
+    
+    .index__box--right{
+        .index__imagen--right{
+            position: relative;
+            left: 30px;
+        }
+    }
+}
+
 /* Media 768-1023px */
 @media only screen and (min-width: 768px) and (max-width: 1023px){
+    .index__box--left{
+        .index__imagen--left{
+            position: relative;
+            right: 30px;
+        }
+    }
+    
+    .index__box--right{
+        .index__imagen--right{
+            position: relative;
+            left: 30px;
+        }
+    }
+
     footer{
         div{
             margin-top: 20px;
@@ -184,11 +215,20 @@
     }
 
     .index__box--right{
-        height: 200px;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        height: 330px;
         width: 280px;
         .index__imagen--right{
-            max-width: 100%;
-            margin-bottom: 10px;
+            width: 210px;
+            height: 150px;
+            position: relative;
+            left: auto;
+            bottom: 20px;
+        }
+        p{
+            margin-left: 10px;
+            margin-top: 0px;
         }
     }
 
