@@ -5,7 +5,7 @@
     width: 780px;
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     border-radius: 50px;
-    background-color: rgba(244, 122, 255, 0.089);
+    background-color: rgba(250, 231, 251, 0.75);
     margin: 20px;
     display: flex;
     align-items: center;
@@ -27,7 +27,7 @@
     width: 780px;
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     border-radius: 50px;
-    background-color: rgba(244, 122, 255, 0.089);
+    background-color: rgba(250, 231, 251, 0.75);
     margin: 20px;
     display: flex;
     align-items: center;
@@ -45,6 +45,28 @@
 }
 /* Servicios */
 
+.servicios__box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 900px;
+    padding: 20px;
+    margin: 15px;
+    background-color: rgba(250, 231, 251, 0.75);
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    .servicios__texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 350px;
+    }
+    img{
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    }
+}
 .accordion{
     width: 950px;
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
@@ -52,20 +74,7 @@
         font-family: 'Jost', sans-serif;
         font-size: 1em;
     }
-    .servicios__box{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        width: 900px;
-        padding: 30px;
-        .servicios__texto{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 300px;
-        }
-    }
+    
 }
 
 /* Precios */

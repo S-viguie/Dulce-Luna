@@ -37,14 +37,12 @@
         } 
     }
 
-    .accordion{
-        .servicios__box{
-            flex-direction: column;
-            width: fit-content;
-            align-items: center;
-            .servicios__texto{
-                margin-top: 20px;
-            }
+    .servicios__box{
+        flex-direction: column;
+        width: fit-content;
+        align-items: center;
+        .servicios__texto{
+            margin-top: 20px;
         }
     }
 
@@ -175,20 +173,19 @@
         font-size: 0.8em;
     }
 
-    .accordion{
-        .servicios__box{
-            flex-direction: column;
-            width: 240px;
-            align-items: center;
-            padding: 20px;
-            .servicios__texto{
-                margin-top: 20px;
-                width: fit-content;
-            }
-            img{
-                max-width: 100%;
-                height: 180px;
-            }
+    .servicios__box{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: fit-content;
+        width: 280px;
+        align-items: center;
+        .servicios__texto{
+            width: 200px;
+            margin-top: 20px;
+        }
+        img{
+            height: 165px;
+            width: 220px;
         }
     }
 
