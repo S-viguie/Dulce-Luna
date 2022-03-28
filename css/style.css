@@ -127,15 +127,10 @@ body {
     align-items: center;
     width: 350px; }
   .servicios__box img {
+    height: 264px;
+    width: 352px;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
-
-.accordion {
-  width: 950px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
-  .accordion .accordion-button {
-    font-family: 'Jost', sans-serif;
-    font-size: 1em; }
 
 /* Precios */
 .card {
