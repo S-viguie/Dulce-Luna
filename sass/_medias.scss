@@ -13,10 +13,18 @@
             left: 30px;
         }
     }
+
+    body{
+        background-size: 70%;
+    }
 }
 
 /* Media 768-1023px */
 @media only screen and (min-width: 768px) and (max-width: 1023px){
+    body{
+        background-size: 70%;
+    }
+
     .index__box--left{
         .index__imagen--left{
             position: relative;
@@ -137,6 +145,10 @@
 
 /* Media <767px */
 @media only screen and (max-width: 767px){
+    body{
+        background-size: 90%;
+    }
+
     footer{
         div{
             margin-top: 20px;
@@ -230,6 +242,8 @@
     }
 
     .card{
+        height: 200px;
+        margin: 10px;
         .precios__texto{
             font-size: 1.5em;
         }
